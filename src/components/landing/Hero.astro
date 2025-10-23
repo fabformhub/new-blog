@@ -1,0 +1,51 @@
+---
+// Assets
+import { Image } from "astro:assets";
+import StudyGroup from "/src/images/assets/studyGroup.jpeg";
+import HeroTestimonials from "../testimonials/HeroTestimonials.astro";
+// Fundations
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Icons
+import Plus from "@/components/fundations/icons/Plus.astro";
+---
+
+<section class="relative overflow-hidden">
+  <Wrapper variant="standard" class="relative pt-48">
+    <div class="text-balance max-w-3xl">
+      <Text
+        tag="h1"
+        variant="displayXL"
+        class="text-accent-950 uppercase font-display font-medium"
+      >
+        Build Lightning-Fast Websites with Astro
+      </Text>
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 mt-8 lg:items-end">
+        <Text tag="p" variant="textSM" class="text-base-500">
+          A complete beginner-to-pro course on mastering Astro, the modern
+          framework for content-focused web development.
+        </Text>
+
+        <div class="flex items-center gap-2">
+          <Button
+            isLink={true}
+            href="/courses"
+            iconOnly
+            size="base"
+            variant="accent"
+          >
+            <Plus slot="icon" size="base" />
+          </Button>
+          <Text
+            tag="p"
+            variant="textLG"
+            class="uppercase font-display text-base-900 font-medium"
+            >discover more</Text
+          >
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+  <HeroTestimonials />
+</section>

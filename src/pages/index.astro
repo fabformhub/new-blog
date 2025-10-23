@@ -1,0 +1,76 @@
+---
+// Assets
+import Kicker from "@/components/assets/Kicker.astro";
+// Fundations
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Sections
+import Hero from "@/components/landing/Hero.astro";
+import Learn from "@/components/landing/Learn.astro";
+import Who from "@/components/landing/Who.astro";
+import Expectations from "@/components/landing/Expectations.astro";
+import Stats from "@/components/landing/Stats.astro";
+import Testimonials from "@/components/testimonials/Testimonials.astro";
+
+// Components
+import CourseEntry from "@/components/courses/CourseEntry.astro";
+// Content
+import { getCollection } from "astro:content";
+const allLessons = await getCollection("lessons");
+const allCourses = (await getCollection("courses")).sort(
+  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
+);
+---
+
+<BaseLayout>
+  <Hero />
+  <Learn />
+  <Who />
+  <Expectations />
+  <section>
+    <Wrapper variant="standard" class="py-12">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-end">
+        <div class="lg:col-span-2">
+          <Kicker
+            number="04"
+            text="Latest courses"
+            colorClass="text-accent-600"
+          />
+          <Text
+            tag="h2"
+            variant="displaySM"
+            class="text-accent-950 uppercase font-display font-medium mt-12"
+          >
+            What will you master next?
+          </Text>
+          <Text tag="p" variant="textSM" class="mt-2 text-base-500">
+            Fresh courses drop every week. Pick your path and learn at the speed
+            of inspiration.
+          </Text>
+        </div>
+        <Button
+          isLink={true}
+          size="sm"
+          variant="accent"
+          href="/courses"
+          class="w-fit lg:ml-auto"
+        >
+          Get pro access</Button
+        >
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+        {
+          allCourses.map((course) => (
+            <CourseEntry post={course} lessons={allLessons} />
+          ))
+        }
+      </div>
+    </Wrapper>
+  </section>
+  <Stats />
+
+  <Testimonials />
+</BaseLayout>
