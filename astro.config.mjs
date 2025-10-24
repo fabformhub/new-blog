@@ -20,6 +20,7 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://yourdomain.com',
+  site: 'https://blog.fabform.io',
+  base: '/',
   integrations: [sitemap(), mdx()]
 });
