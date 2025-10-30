@@ -1,25 +1,26 @@
 ---
 import { AstroSeo } from "@astrolib/seo";
+const { title, description } = Astro.props;
 ---
-
+<title>{title}</title>
 <AstroSeo
-  title="Your Page Title"
-  description="A detailed description of your page content."
-  canonical="https://yourwebsite.com/current-page"
+  title={title}
+  description={description}
+  canonical={Astro.url}
   openGraph={{
-    url: "https://yourwebsite.com/current-page",
-    title: "Your Page Title",
-    description: "A detailed description of your page content.",
+    url: Astro.url,
+    title,
+    description,
     images: [
       {
-        url: "https://yourwebsite.com/og-image.jpg",
+        url: "https://fabform.io/screenshot.jpg",
         width: 1200,
         height: 630,
         alt: "Open Graph Image Alt",
         type: "image/jpeg",
       },
     ],
-    site_name: "Your Site Name",
+    site_name: "fabform",
     type: "website",
     locale: "en_US",
   }}
@@ -29,3 +30,4 @@ import { AstroSeo } from "@astrolib/seo";
     cardType: "summary_large_image",
   }}
 />
+
