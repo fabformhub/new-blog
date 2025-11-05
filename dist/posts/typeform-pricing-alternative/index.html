@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth selection:bg-base-100 selection:text-accent-500"> <head>:x
+
+import Seo from "@/components/fundations/head/Seo.astro";
+import Meta from "@/components/fundations/head/Meta.astro";
+import Fonts from "@/components/fundations/head/Fonts.astro";
+import Favicons from "@/components/fundations/head/Favicons.astro";
+// Scripts
+import Fuse from "@/components/fundations/scripts/Fuse.astro";
+import KeenSlider from "@/components/fundations/scripts/KeenSlider.astro"
+<Seo />
+<Meta />
+<Fonts />
+<Favicons />
+<!-- Scripts -->
+<Fuse />
+<KeenSlider />
+<script defer data-domain="fabform.io" src="https://plausible.io/js/script.js"><link rel="stylesheet" href="/_astro/_slug_.gqJyzjZu.css"></head> <body class="relative flex flex-col bg-white min-h-svh"> <div id="nav-wrapper" class="fixed inset-x-0 top-0 w-full mx-auto z-51 "> <div class="max-w-6xl 2xl:max-w-[1400px] mx-auto px-8 py-4">  <div id="navigation-wrapper" class="relative flex flex-col md:items-center md:justify-between md:gap-12 md:flex-row"> <div class="flex flex-row items-center justify-between"> <a href="/" class="flex items-center gap-2 font-display uppercase font-medium"> <span class="sr-only">Go to homepage</span> <svg class="h-4 text-base-900" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M51.2591 125.74H29.6763C13.2894 125.74 0 112.451 0 96.064V74.4813H10.8913V96.064C10.8913 106.356 19.2847 114.749 29.5764 114.749H51.1592V125.74H51.2591Z" fill="currentColor"></path> <path d="M95.3237 125.74H73.741V114.849H95.3237C105.615 114.849 114.009 106.456 114.009 96.164V74.4813H124.9V96.064C125 112.351 111.611 125.74 95.3237 125.74Z" fill="currentColor"></path> <path d="M125 51.9993H114.109V30.4166C114.109 20.1248 105.715 11.7315 95.4236 11.7315H73.741V0.840195H95.3237C111.711 0.840195 125 14.1296 125 30.5165V51.9993Z" fill="currentColor"></path> <path d="M10.9913 51.9993H0.100098V30.4166C0.100098 14.0297 13.3894 0.740295 29.7763 0.740295H51.359V11.6315H29.7763C19.4845 11.6315 11.0913 20.0248 11.0913 30.3166V51.9993H10.9913Z" fill="currentColor"></path> </svg> <span>FabForm®</span> </a> <button class="flex font-medium ease-in-out text-center items-center duration-500 rounded-full transition-all focus:outline-2 justify-center focus:outline-offset-2 text-accnet-950 bg-accent-200 outline outline-accent-200 hover:bg-accent-400 focus:outline-accent-400 shadow-sm size-8 text-xs md:hidden" id="menu-toggle"><svg class="size-4" stroke="currentColor" fill="none" viewBox="0 0 24 24"> <path id="menu-icon" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg></button> </div> <nav id="navigation-menu" class="fixed inset-0 flex flex-col justify-between h-full py-12 bg-white opacity-0 pointer-events-none md:bg-none md:bg-transparent lg:p-0 md:p-0 transform transition-all duration-300 ease-in-out -translate-y-4 md:relative md:inset-auto md:opacity-100 md:pointer-events-auto md:translate-y-0 md:w-full"> <button class="flex font-medium ease-in-out text-center items-center duration-500 rounded-full transition-all focus:outline-2 justify-center focus:outline-offset-2 text-base-600 bg-base-100 outline outline-base-50 hover:bg-base-200 focus:outline-base-600 size-8 text-xs absolute top-4 right-8 md:hidden" id="menu-close" aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wave-x size-4" slot="icon"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path> </svg></button> <div class="relative flex flex-col items-start justify-start w-full h-full px-8 gap-4 md:px-0 md:flex-row md:items-center md:text-left"> <a href="/" class="md:hidden"> <span class="sr-only">Go to homepage</span> <svg class="h-8 text-base-900" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M51.2591 125.74H29.6763C13.2894 125.74 0 112.451 0 96.064V74.4813H10.8913V96.064C10.8913 106.356 19.2847 114.749 29.5764 114.749H51.1592V125.74H51.2591Z" fill="currentColor"></path> <path d="M95.3237 125.74H73.741V114.849H95.3237C105.615 114.849 114.009 106.456 114.009 96.164V74.4813H124.9V96.064C125 112.351 111.611 125.74 95.3237 125.74Z" fill="currentColor"></path> <path d="M125 51.9993H114.109V30.4166C114.109 20.1248 105.715 11.7315 95.4236 11.7315H73.741V0.840195H95.3237C111.711 0.840195 125 14.1296 125 30.5165V51.9993Z" fill="currentColor"></path> <path d="M10.9913 51.9993H0.100098V30.4166C0.100098 14.0297 13.3894 0.740295 29.7763 0.740295H51.359V11.6315H29.7763C19.4845 11.6315 11.0913 20.0248 11.0913 30.3166V51.9993H10.9913Z" fill="currentColor"></path> </svg> </a> <div class="relative flex flex-col justify-center mt-12 gap-2 md:gap-4 md:flex-row md:ml-auto md:mt-0">  </div> <!--
+          <Button isLink={true} size="xs" variant="default" href="/pricing">
+            Get started
+          </Button>
+--> </div> </nav> </div>  </div> </div> <script type="module">
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const navigationMenu = document.getElementById("navigation-menu");
+    const navWrapper = document.getElementById("nav-wrapper");
+
+    // --- Mobile Menu Logic ---
+    let isMobileMenuOpen = false;
+
+    function toggleMenu(open) {
+      isMobileMenuOpen = open;
+      navigationMenu.classList.toggle("opacity-100", open);
+      navigationMenu.classList.toggle("translate-y-0", open);
+      navigationMenu.classList.toggle("pointer-events-auto", open);
+      navigationMenu.classList.toggle("opacity-0", !open);
+      navigationMenu.classList.toggle("-translate-y-4", !open);
+      navigationMenu.classList.toggle("pointer-events-none", !open);
+      menuIcon.classList.toggle("hidden", open);
+      closeIcon.classList.toggle("hidden", !open);
+      
+      // Update nav background when menu state changes
+      updateNavOnScroll();
+    }
+
+    menuToggle.addEventListener("click", () => toggleMenu(true));
+    menuClose.addEventListener("click", () => toggleMenu(false));
+
+    // --- Scroll Blur Logic (Desktop and Mobile) ---
+    let ticking = false;
+
+    function updateNavOnScroll() {
+      // Don't apply blur effects when mobile menu is open
+      if (window.innerWidth < 768 && isMobileMenuOpen) {
+        navWrapper.classList.remove("backdrop-blur", "bg-white/10", "backdrop-blur-sm", "bg-white/5");
+        return;
+      }
+
+      if (window.scrollY > 50) {
+        if (window.innerWidth >= 768) {
+          // Desktop: Full blur
+          navWrapper.classList.add("backdrop-blur", "bg-white/10");
+          navWrapper.classList.remove("backdrop-blur-sm", "bg-white/5");
+        } else {
+          // Mobile: Lighter blur for better performance
+          navWrapper.classList.add("backdrop-blur-sm", "bg-white/5");
+          navWrapper.classList.remove("backdrop-blur", "bg-white/10");
+        }
+      } else {
+        // Remove all blur effects when at top
+        navWrapper.classList.remove("backdrop-blur", "bg-white/10", "backdrop-blur-sm", "bg-white/5");
+      }
+      ticking = false;
+    }
+
+    function requestTick() {
+      if (!ticking) {
+        requestAnimationFrame(updateNavOnScroll);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", requestTick);
+    window.addEventListener("resize", updateNavOnScroll);
+
+    // Initial check
+    updateNavOnScroll();
+  });
+</script> <div class="fixed z-50 bottom-5 right-5"><div class="relative"> <button class="flex font-medium ease-in-out text-center items-center duration-500 rounded-full transition-all focus:outline-2 justify-center focus:outline-offset-2 text-white bg-base-900 outline outline-base-900 hover:bg-base-800 focus:outline-base-800 shadow-sm size-13 text-lg" type="button" id="searchButton" aria-label="Search posts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-search size-5" slot="icon"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path> </svg></button> <div id="searchModal" class="fixed inset-0 z-50 hidden overflow-y-auto" role="dialog" aria-modal="true"> <div class="min-h-screen px-4 text-center"> <div class="fixed inset-0 bg-base-950/50 backdrop-blur transition-opacity" id="modalOverlay"></div> <div class="relative inline-block w-full max-w-md mt-12 mb-8 text-left align-middle bg-base-100 lg:mt-48  transition-all transform"> <div class="p-4 pb-2"> <div class="hidden"> <button type="button" id="closeSearch" class="ml-auto cursor-pointer text-base-400 hover:text-base-500" aria-label="Close search"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wave-x size-5"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path> </svg> </button> </div> <input type="text" id="searchInput" placeholder="Search courses..." class="block w-full px-4 py-2 text-xs leading-tight align-middle bg-white border border-transparent transition duration-300 ease-in-out focus:z-10 h-9 rounded-md text-base-500 ring-1 ring-base-200 placeholder-base-400 focus:border-accent-500 focus:ring-accent-100 focus:ring-2 focus:outline-none shadow-sm"> <div id="searchResults" class="flex flex-col w-full mt-2 overflow-y-auto bg-white max-h-200 scrollbar-hide focus:outline-none space-y-2 focus:ring-2 focus:ring-accent-500"></div> </div> </div> </div> </div> </div> <script>(function(){const courses = [];
+
+  window.addEventListener("load", () => {
+    // Get references to necessary DOM elements
+    const searchButton = document.getElementById("searchButton");
+    const searchModal = document.getElementById("searchModal");
+    const modalOverlay = document.getElementById("modalOverlay");
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+    const closeSearch = document.getElementById("closeSearch");
+    // Clear the search input field on page load to prevent old values from persisting
+    searchInput.value = "";
+    // Initialize Fuse.js for fuzzy searching
+    const fuse = new Fuse(courses, {
+      keys: ["title", "description"], // Fields to search in
+      threshold: 0.3, // Determines search sensitivity (lower = stricter match)
+      includeMatches: true, // Includes matched text segments in results
+    });
+    // Function to open the search modal
+    function openSearch(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      searchModal.classList.remove("hidden"); // Show the modal
+      document.body.style.overflow = "hidden"; // Prevent scrolling in the background
+      setTimeout(() => searchInput.focus(), 100); // Delay focus to ensure input is ready
+    }
+    // Function to close the search modal
+    function closeSearchModal(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      searchModal.classList.add("hidden"); // Hide the modal
+      document.body.style.overflow = ""; // Restore scrolling functionality
+      searchInput.value = ""; // Clear search input when modal is closed
+      searchResults.innerHTML = ""; // Clear search results
+    }
+    // Function to display search results
+    function renderResults(results) {
+      // If search input is empty, clear results
+      if (!searchInput.value.trim()) {
+        searchResults.innerHTML = "";
+        return;
+      }
+      // If no results are found, display a message
+      if (results.length === 0) {
+        searchResults.innerHTML = `
+                <div class="px-4 py-3 text-sm text-base-500">
+                    No results found
+                </div>
+            `;
+        return;
+      }
+      // Generate HTML for search results and display them
+      searchResults.innerHTML = results
+        .slice(0, 5) // Limit results to top 5 matches
+        .map(
+          (result) => `
+                <a href="/course/course/${result.item.slug}"   class="block p-4 m-1 text-balance  hover:bg-base-100 focus:outline-none focus:ring-2 ring-inset focus:ring-accent-500 duration-300">   
+                  <h3 class="text-sm font-medium text-base-800">${result.item.title}</h3>   
+                  <p class="mt-2 text-sm text-base-500 ">${result.item.description}</p> 
+                </a>
+            `
+        )
+        .join(""); // Convert array of HTML into a single string
+    }
+    // Attach event listeners for opening the search modal (both click and touch)
+    searchButton.addEventListener("click", openSearch);
+    searchButton.addEventListener("touchend", openSearch);
+    // Attach event listeners for closing the search modal (both click and touch)
+    closeSearch.addEventListener("click", closeSearchModal);
+    closeSearch.addEventListener("touchend", closeSearchModal);
+    // Close the modal when clicking outside the search box
+    modalOverlay.addEventListener("click", closeSearchModal);
+    modalOverlay.addEventListener("touchend", closeSearchModal);
+    // Perform search when input changes
+    searchInput.addEventListener("input", (e) => {
+      const value = e.target.value; // Get the input value
+      const results = value.trim() ? fuse.search(value) : []; // Perform search if input isn't empty
+      renderResults(results); // Update the displayed results
+    });
+    // Close the search modal when pressing the "Escape" key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !searchModal.classList.contains("hidden")) {
+        closeSearchModal();
+      }
+    });
+  });
+})();</script></div> <main class="grow">  <section> <div class="max-w-6xl 2xl:max-w-[1400px] mx-auto px-8 pt-48 pb-24">  <div class="grid gap-4 lg:gap-8 grid-cols-1 lg:grid-cols-3 lg:items-start"> <div class="text-balance lg:col-span-2"> <h1 class="text-lg  sm:text-xl md:text-2xl lg:text-3xl font-medium text-base-900">  Why Typeform’s Pricing Model Is So Expensive—and What You Can Use Instead  </h1> <p class="text-sm  mt-2 text-base-500">  Explore the hidden costs of Typeform’s pricing model—response limits, branding restrictions, and recurring fees—and discover how FabForm.io offers a scalable, one-time-payment alternative for marketers and growth teams.  </p> <img src="/_astro/typeform-is-too-expensive.u3D12AuH_Zfi50S.webp" alt="Comparison of Typeform pricing tiers and FabForm benefits" loading="lazy" decoding="async" fetchpriority="auto" width="1000" height="800" class="object-cover object-center w-full mt-4 border aspect-12/6 lg:col-span-2 border-base-200"> <div class="prose text-base-500 prose-blockquote:border-l-accent prose-a:border-base-500 prose-a:border-b prose-a:no-underline prose-a prose-a:border-dashed prose-a:transition-colors prose-a:duration-200 prose-a:hover:border-solid prose-a:hover:bg-accent-200 prose-headings:font-semibold prose-headings:text-base-800 prose-pre:rounded-none prose-li:marker:text-accent-600  max-w-none   w-full prose-blockquote:text-base-500    prose-ul:[list-style-type:'—'] prose-pre:scrollbar-hide mt-4">   <h1 id="why-typeform-is-so-expensiveand-why-fabformio-is-the-smarter-alternative">Why Typeform Is So Expensive—and Why FabForm.io Is the Smarter Alternative</h1>
+<p>If you’ve ever tried building a form with Typeform, you’ve probably hit a wall: limited free usage, steep monthly fees, and basic features locked behind expensive tiers. Typeform’s sleek design is appealing, but its pricing model leaves many users frustrated—especially startups, marketers, and developers who need flexibility without recurring costs.</p>
+<p>Let’s break down why Typeform feels overpriced, and why <a href="https://fabform.io">FabForm.io</a> is quickly becoming the go-to alternative.</p>
+<hr>
+<h2 id="typeforms-pricing-what-youre-really-paying-for">Typeform’s Pricing: What You’re Really Paying For</h2>
+<p>Typeform’s pricing is built around usage limits, branding removal, and gated features. Even modest form activity can push you into higher tiers.</p>
+<h3 id="limited-free-tier">Limited Free Tier</h3>
+<ul>
+<li>Only 100 responses per month</li>
+<li>Mandatory Typeform branding</li>
+<li>No custom domains or advanced logic</li>
+</ul>
+<h3 id="paid-plans-escalate-quickly">Paid Plans Escalate Quickly</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Plan</th><th>Monthly Cost</th><th>Response Limit</th><th>Branding Removal</th><th>Custom Domain</th></tr></thead><tbody><tr><td>Basic</td><td>$25</td><td>100</td><td>No</td><td>No</td></tr><tr><td>Plus</td><td>$59.50</td><td>1,000</td><td>Yes</td><td>Yes</td></tr><tr><td>Business</td><td>$99.83</td><td>10,000</td><td>Yes</td><td>Yes</td></tr></tbody></table>
+<p>Enterprise plans are even higher and often require negotiation. For many users, the jump from free to paid feels abrupt—and the value doesn’t scale proportionally.</p>
+<hr>
+<h2 id="feature-gating-and-hidden-costs">Feature Gating and Hidden Costs</h2>
+<p>Even at higher tiers, Typeform restricts access to features that many competitors offer by default:</p>
+<ul>
+<li><strong>Conditional logic</strong>: Only available on paid plans</li>
+<li><strong>Analytics and integrations</strong>: Limited unless you upgrade</li>
+<li><strong>Branding removal</strong>: Requires Plus or Business tier</li>
+<li><strong>Custom domains</strong>: Not available on Basic</li>
+<li><strong>Team collaboration</strong>: Costs extra</li>
+</ul>
+<p>This gating model forces users to pay more for basic functionality—especially frustrating for small teams and solo creators.</p>
+<hr>
+<h2 id="market-sentiment-users-are-looking-elsewhere">Market Sentiment: Users Are Looking Elsewhere</h2>
+<p>Across Reddit, Hacker News, and SaaS forums, users consistently voice frustration with Typeform’s pricing:</p>
+<ul>
+<li>“Feels like I’m paying for the design, not the functionality.”</li>
+<li>“I just need a simple form without branding—why is that $60/month?”</li>
+<li>“The free tier is basically a trial. You hit the limit in days.”</li>
+</ul>
+<p>Many are actively searching for alternatives that offer clean UX, backend control, and predictable pricing.</p>
+<hr>
+<h2 id="fabformio-a-clean-affordable-alternative-with-lifetime-pricing">FabForm.io: A Clean, Affordable Alternative with Lifetime Pricing</h2>
+<p><a href="https://fabform.io">FabForm.io</a> was built to solve exactly these pain points. It’s a refined, elegant Typeform alternative designed for creators who want full control—without recurring costs.</p>
+<h3 id="what-sets-fabform-apart">What Sets FabForm Apart</h3>
+<ul>
+<li><strong>Lifetime pricing</strong>: Pay once, use forever. No subscriptions, no hidden fees.</li>
+<li><strong>No branding</strong>: Your forms stay clean and professional—no logos, no distractions.</li>
+<li><strong>Secure backend workflows</strong>: Built for developers who care about idiomatic, maintainable integrations.</li>
+<li><strong>Elegant UX</strong>: Matches Typeform’s polish without the bloat or lock-in.</li>
+<li><strong>Fast setup</strong>: No complex builders or bloated dashboards. Just drop in your form and go.</li>
+</ul>
+<p>FabForm is ideal for startups, marketers, and developers who want simplicity, flexibility, and affordability. Whether you’re collecting leads, running surveys, or building onboarding flows, FabForm gives you everything you need—without the pricing drama.</p>
+<hr>
+<h2 id="why-lifetime-pricing-matters">Why Lifetime Pricing Matters</h2>
+<p>Recurring costs add up—especially for tools that sit quietly in your stack. FabForm’s lifetime pricing means:</p>
+<ul>
+<li><strong>No budgeting surprises</strong></li>
+<li><strong>No forced upgrades</strong></li>
+<li><strong>No vendor lock-in</strong></li>
+</ul>
+<p>You own your workflow. You control your data. And you never have to worry about monthly fees just to keep your forms running.</p>
+<hr>
+<h2 id="final-thoughts-the-typeform-alternative-youve-been-waiting-for">Final Thoughts: The Typeform Alternative You’ve Been Waiting For</h2>
+<p>Typeform’s pricing model may work for large teams with deep pockets, but for most creators, it’s overkill. FabForm.io offers a cleaner, more affordable path—with no branding, no subscriptions, and no compromises.</p>
+<p>If you’re tired of paying monthly just to collect form responses, it’s time to switch. FabForm.io is built for people who care about clean UX, secure workflows, and predictable pricing.</p>
+<hr>   </div> </div> <div class="w-ful lg:sticky lg:top-24"> <div class="p-6 bg-base-50"> <div>  </div> <div class="relative flex flex-col pt-4 mt-4 gap-2"> <p class="text-xs  text-base-500">  
+Share this article:
+  </p> <div class="flex flex-wrap gap-4"> <button id="twitter-share" class="text-sm text-left text-base-600 hover:text-base-800 duration-300" aria-label="Share on X">
+X
+</button> <button id="facebook-share" class="text-sm text-left text-base-600 hover:text-base-800 duration-300" aria-label="Share on Facebook">
+Facebook
+</button> <button id="linkedin-share" class="text-sm text-left text-base-600 hover:text-base-800 duration-300" aria-label="Share on LinkedIn">
+Linkedin
+</button> <button id="copy-link" class="text-sm text-left text-base-600 hover:text-base-800 duration-300" aria-label="Copy link">
+Link
+</button> </div> <script>(function(){const url = undefined;
+const title = undefined;
+const description = "Explore the hidden costs of Typeform’s pricing model—response limits, branding restrictions, and recurring fees—and discover how FabForm.io offers a scalable, one-time-payment alternative for marketers and growth teams.";
+const contentType = "blog";
+
+  // Get the current page URL and title, using custom values if provided
+  const pageUrl = url || window.location.href;
+  const pageTitle = title || document.title;
+  const pageDesc = description || "";
+  // Set share text specifically for blog content type
+  let shareText = `Check out this article: ${pageTitle}`;
+  // Add description if available
+  if (pageDesc) {
+    shareText += ` - ${pageDesc}`;
+  }
+  // Twitter share
+  document.getElementById("twitter-share")?.addEventListener("click", () => {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(pageUrl)}`;
+    window.open(twitterUrl, "_blank");
+  });
+  // Facebook share
+  document.getElementById("facebook-share")?.addEventListener("click", () => {
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+    window.open(facebookUrl, "_blank");
+  });
+  // LinkedIn share
+  document.getElementById("linkedin-share")?.addEventListener("click", () => {
+    const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
+    window.open(linkedinUrl, "_blank");
+  });
+  // Copy link
+  document.getElementById("copy-link")?.addEventListener("click", () => {
+    navigator.clipboard.writeText(pageUrl).then(
+      () => {
+        const button = document.getElementById("copy-link");
+        const originalText = button.textContent;
+        button.textContent = "✓";
+        setTimeout(() => {
+          button.innerHTML = `Copied!`;
+        }, 2000);
+      },
+      (err) => {
+        console.error("Could not copy text: ", err);
+      }
+    );
+  });
+})();</script> </div> </div> </div> </div>  </div> </section> <section class=""> <div class="max-w-6xl 2xl:max-w-[1400px] mx-auto px-8 py-24">  <h2 class="text-lg  sm:text-xl md:text-2xl lg:text-3xl font-medium text-base-900">  
+Related posts
+  </h2> <div class="mt-4  grid grid-cols-1 gap-1 md:grid-cols-2"> <article class="relative flex flex-col justify-between h-full p-6 bg-base-50 min-h-100 group transition-all duration-300 hover:bg-accent-500 accent-500"> <a href="/blog/posts/food-packaging-customer-service-numbers-decline" title="Read more: Why Food Brands Are Moving Away from Customer Service Numbers on Packaging" aria-label="Read blog post: Why Food Brands Are Moving Away from Customer Service Numbers on Packaging" class="absolute inset-0 z-10"></a> <p class="text-xs  uppercase text-base-500 group-hover:text-white/80">   <time datetime="October 23, 2025"> October 23, 2025</time>   </p> <div class="flex flex-col"> <h3 class="text-sm  font-medium text-base-900 text-balance group-hover:text-white">  Why Food Brands Are Moving Away from Customer Service Numbers on Packaging  </h3> <p class="text-sm  mt-2 text-base-500 line-clamp-2 text-balance group-hover:text-white/80">  Explore why food manufacturers are removing customer service numbers from packaging and replacing them with QR code feedback forms powered by FabForm.io.  </p> </div> </article><article class="relative flex flex-col justify-between h-full p-6 bg-base-50 min-h-100 group transition-all duration-300 hover:bg-accent-500 accent-500"> <a href="/blog/posts/how-to-get-more-feedback-with-qr-codes" title="Read more: Why Brands Are Replacing Customer Service Numbers with QR Code Feedback Forms" aria-label="Read blog post: Why Brands Are Replacing Customer Service Numbers with QR Code Feedback Forms" class="absolute inset-0 z-10"></a> <p class="text-xs  uppercase text-base-500 group-hover:text-white/80">   <time datetime="October 28, 2025"> October 28, 2025</time>   </p> <div class="flex flex-col"> <h3 class="text-sm  font-medium text-base-900 text-balance group-hover:text-white">  Why Brands Are Replacing Customer Service Numbers with QR Code Feedback Forms  </h3> <p class="text-sm  mt-2 text-base-500 line-clamp-2 text-balance group-hover:text-white/80">  Explore why modern brands are ditching customer service hotlines in favor of QR code feedback forms powered by FabForm.io—making it easier than ever to collect real-time customer insights.  </p> </div> </article><article class="relative flex flex-col justify-between h-full p-6 bg-base-50 min-h-100 group transition-all duration-300 hover:bg-accent-500 accent-500"> <a href="/blog/posts/qr-code-feedback-food-packaging" title="Read more: QR Code Feedback on Food Packaging: A Modern Approach to Consumer Insights" aria-label="Read blog post: QR Code Feedback on Food Packaging: A Modern Approach to Consumer Insights" class="absolute inset-0 z-10"></a> <p class="text-xs  uppercase text-base-500 group-hover:text-white/80">   <time datetime="October 23, 2025"> October 23, 2025</time>   </p> <div class="flex flex-col"> <h3 class="text-sm  font-medium text-base-900 text-balance group-hover:text-white">  QR Code Feedback on Food Packaging: A Modern Approach to Consumer Insights  </h3> <p class="text-sm  mt-2 text-base-500 line-clamp-2 text-balance group-hover:text-white/80">  Learn how food brands can use QR codes and one-question-at-a-time forms to collect fast, structured consumer feedback directly from product labels—powered by FabForm.io.  </p> </div> </article> </div>  </div> </section> </main> <footer class="-t"> <div class="max-w-6xl 2xl:max-w-[1400px] mx-auto px-8 py-12">  <div class="xl:grid xl:grid-cols-3 xl:gap-8"> <div class="text-base-900"> <a href="/" class="flex items-center gap-2"> <span class="sr-only">Go to homepage</span> <svg class="h-4 text-base-900" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M51.2591 125.74H29.6763C13.2894 125.74 0 112.451 0 96.064V74.4813H10.8913V96.064C10.8913 106.356 19.2847 114.749 29.5764 114.749H51.1592V125.74H51.2591Z" fill="currentColor"></path> <path d="M95.3237 125.74H73.741V114.849H95.3237C105.615 114.849 114.009 106.456 114.009 96.164V74.4813H124.9V96.064C125 112.351 111.611 125.74 95.3237 125.74Z" fill="currentColor"></path> <path d="M125 51.9993H114.109V30.4166C114.109 20.1248 105.715 11.7315 95.4236 11.7315H73.741V0.840195H95.3237C111.711 0.840195 125 14.1296 125 30.5165V51.9993Z" fill="currentColor"></path> <path d="M10.9913 51.9993H0.100098V30.4166C0.100098 14.0297 13.3894 0.740295 29.7763 0.740295H51.359V11.6315H29.7763C19.4845 11.6315 11.0913 20.0248 11.0913 30.3166V51.9993H10.9913Z" fill="currentColor"></path> </svg> <span>FabForm</span> </a> <p class="mt-4 text-sm font-normal text-base-500 text-balance"></p> </div> <div class="md:grid md:grid-cols-2 xl:grid-cols-4 md:gap-8 xl:col-span-2">  </div> </div>  </div> </footer> </body></html>
